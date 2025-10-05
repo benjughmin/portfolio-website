@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/nav-bar.css">
+    <script>
+        fetch('components/navbar.html')
+            .then(response => response.text())  // Convert the response to text
+            .then(data => {                     // Finds the placeholder and inserts the navbar
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
 </head>
 <body>
-    <div class="navbar-container">
-        <a href="index.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="certification-training.html">Certifications & Training</a>
-        <a href="portfolio.html">Portfolio</a>
-    </div>
+    <div id="navbar-placeholder"></div>
 </body>
 </html>

@@ -1,12 +1,30 @@
-.navbar-container {
+.navbar-placeholder {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     height: 56px;
-    width: 100%;
+    max-width: 100%;
     padding: 0.25rem 1rem;
-    border: black 2px solid;
+    border: #3c3836 2px solid;
     border-radius: 10px;
+    background: #3c3836;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.navbar-placeholder a {
+    display: inline-block;
+    color: #ebdbb2;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    font-family: monospace, arial;
+    transition: 0.35s;
+}
+
+.navbar-placeholder a:hover {
+    background: #aa3124;
+    border-radius: 5px;
 }
