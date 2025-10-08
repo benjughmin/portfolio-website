@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Education - Benjamin Mallari</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/education.css">
     <script>
         fetch('components/navbar.html')
             .then(response => response.text())
@@ -16,5 +17,48 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
+    
+    <main class="education-container">
+        <div class="greeting-container">
+            <div class="education-content">
+                <div class="education-output">
+                    <h1 class="page-title">EDUCATION</h1>
+
+                    <!-- University/College -->
+                    <div class="education-item">
+                        <div class="institution">
+                            <p>College</p>
+                            <h2>FEU Institute of Technology</h2>
+                            <div class="degree">BS in Computer Science in Software Engineering</div>
+                            <div class="duration">2022 - Current</div>
+                            <div class="location">Sampaloc, Manila</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Senior High School -->
+                    <div class="education-item">
+                        <div class="institution">
+                            <p>Senior High School</p>
+                            <h2>AMA Computer College East Rizal</h2>
+                            <div class="degree">STEM</div>
+                            <div class="duration">2018 - 2020</div>
+                            <div class="location">Antipolo City, Rizal</div>
+                        </div>
+                    </div>
+
+                    <!-- Grade School - High School -->
+                    <div class="education-item">
+                        <div class="institution">
+                            <p>Grade School & High School</p>
+                            <h2>Marist School Marikina</h2>
+                            <div class="degree">STEM</div>
+                            <div class="duration">2007 - 2018</div>
+                            <div class="location">Marikina Heights, Marikina</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

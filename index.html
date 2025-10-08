@@ -6,6 +6,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script>
         fetch('components/navbar.html')
             .then(response => response.text())  // Convert the response to text
@@ -16,5 +17,22 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
+
+    <main class="main-content">
+        <div class="greeting-container">
+            <div class="profile-picture">
+                <img src="assets/my-pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="greeting">
+                <p>Hi my name is</p>
+                <p class="name"><strong>Benjamin Mallari.</strong></p>
+                <p>Welcome to my portfolio website!</p>
+                <div class="social-links">
+                    <a href="https://github.com/benjughmin" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/benjamin-mallari-866552331/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

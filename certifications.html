@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications & Training - Benjamin Mallari</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/certifications.css">
+    <script>
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+    <main class="certifications-container">
+        <div class="greeting-container">
+            <div class="certifications-content">
+                <h1 class="page-title">CERTIFICATIONS & TRAINING</h1>
+                
+                <div class="certifications-grid">
+                    <!-- Certification 1 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <h2>IT Specialist - Python</h2>
+                            <div class="cert-issuer">Certiport - A Pearson VUE Business</div>
+                            <div class="cert-date">Issued: Jul 2024</div>
+                        </div>
+                        <div class="cert-details">
+                            <div class="cert-skills">
+                                <span class="skill-tag">Python (Programming Language)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certification 2 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <h2>CCNA: Introduction to Networks</h2>
+                            <div class="cert-issuer">Cisco</div>
+                            <div class="cert-date">Issued: September 2024</div>
+                        </div>
+                        <div class="cert-details">
+                            <p>Cisco verifies the earner of this badge successfully completed the Introduction to Networks course and achieved this student level credential. Earner has knowledge of networking including IP addressing, how physical, data link protocols support Ethernet, can configure connectivity between switches, routers and end devices to provide access to local and remote resources. Earner participated in up to 54 labs and accumulated up to 14 hours of hands-on labs using Cisco hardware or Packet Tracer tool</p>
+                            <div class="cert-skills">
+                                <span class="skill-tag">Ethernet</span>
+                                <span class="skill-tag">IP Services</span>
+                                <span class="skill-tag">Network Fundamentals</span>
+                                <span class="skill-tag">Security Fundamentals</span>
+                                <span class="skill-tag">Switching</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certification 3 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <h2>IT Specialist - Java</h2>
+                            <div class="cert-issuer">Certiport - A Pearson VUE Business</div>
+                            <div class="cert-date">Issued: Decemebr 2024</div>
+                        </div>
+                        <div class="cert-details">
+                            <p>Earners of this badge demonstrate that they can recognize, write, and debug Java code that will logically solve a problem.</p>
+                            <div class="cert-skills">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Object Oriented Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certification 4 -->
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <h2>PMI Project Management Ready™</h2>
+                            <div class="cert-issuer">Project Management Institute</div>
+                            <div class="cert-date">Issued: March 2025</div>
+                        </div>
+                        <div class="cert-details">
+                            <p>Earners of the PMI Project Management Ready™ badge have an understanding of the concepts within the growing field of project management, and the tools to apply this knowledge to a wide range of opportunities. They have been assessed and validated in the core concepts of project management, business analysis and traditional and agile methodologies used across industries globally. This industry recognized certification is built from a global practice analysis of project professionals.</p>
+                            <div class="cert-skills">
+                                <span class="skill-tag">Agile Concepts</span>
+                                <span class="skill-tag">Business Analysis</span>
+                                <span class="skill-tag">Project Planning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

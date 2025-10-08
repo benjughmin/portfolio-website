@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Benjamin Mallari</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/hobbies.css">
+    <script>
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+    <main class="hobbies-container">
+        <div class="greeting-container">
+            <div class="hobbies-content">
+                <h1 class="page-title">HOBBIES & INTERESTS</h1>
+                
+                <div class="hobbies-grid">
+                    <!-- Gaming -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎮</div>
+                        <h2>Gaming</h2>
+                        <p>Gaming is my go-to way to unwind and challenge myself. I enjoy exploring different worlds, solving complex puzzles, and experiencing compelling storylines. Whether it's strategy games that make me think or action games that keep my reflexes sharp, gaming helps me relax while keeping my mind active.</p>
+                        
+                        <div class="currently-section">
+                            <h3>Currently Playing</h3>
+                            <div class="current-games">
+                                <div class="game-item">
+                                    <img src="images/game1.jpg" alt="Game 1" class="game-image">
+                                    <div class="game-info">
+                                        <h4>The Legend of Zelda: Breath of the Wild</h4>
+                                        <p>Open-world RPG</p>
+                                    </div>
+                                </div>
+                                <div class="game-item">
+                                    <img src="images/game2.jpg" alt="Game 2" class="game-image">
+                                    <div class="game-info">
+                                        <h4>Gran Turismo 7</h4>
+                                        <p>Sim-racing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Music -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎵</div>
+                        <h2>Listening to Music</h2>
+                        <p>Music is the soundtrack to my coding sessions and daily life. I appreciate how different genres can influence my mood and productivity. From focus-enhancing instrumental tracks while programming to energetic beats during workouts, music keeps me motivated and inspired throughout the day.</p>
+                        
+                        <div class="currently-section">
+                            <h3>Favorite Artists</h3>
+                            <div class="artist-list">
+                                <div class="artist-item">
+                                    <img src="images/artist1.jpg" alt="Artist 1" class="artist-image">
+                                    <div class="artist-info">
+                                        <h4>Radiohead</h4>
+                                        <p>Rock</p>
+                                    </div>
+                                </div>
+                                <div class="artist-item">
+                                    <img src="images/artist2.jpg" alt="Artist 2" class="artist-image">
+                                    <div class="artist-info">
+                                        <h4>Daft Punk</h4>
+                                        <p>Electronic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coding -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon">💻</div>
+                        <h2>Coding Projects</h2>
+                        <p>Beyond work, I love experimenting with personal coding projects. Whether it's building small tools to solve everyday problems, learning new programming languages, or contributing to open-source projects, coding as a hobby keeps me constantly learning and growing as a developer.</p>
+                        
+                        <div class="currently-section">
+                            <h3>Current Projects</h3>
+                            <div class="project-list">
+                                <div class="project-item">
+                                    <div class="project-icon">📱</div>
+                                    <div class="project-info">
+                                        <h4>Placeholder</h4>
+                                        <p>Placeholder</p>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <div class="project-icon">🐍</div>
+                                    <div class="project-info">
+                                        <h4>Placeholder</h4>
+                                        <p>Placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Linux -->
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🐧</div>
+                        <h2>Learning Linux</h2>
+                        <p>Linux fascinates me with its flexibility and power. I enjoy exploring different distributions, learning command-line tools, and understanding how the system works under the hood. It's like having a playground where I can experiment, customize, and optimize my computing environment exactly how I want it.</p>
+                        
+                        <div class="currently-section">
+                            <h3>Current Setup</h3>
+                            <div class="linux-setup">
+                                <div class="setup-item">
+                                    <div class="setup-icon">🖥️</div>
+                                    <div class="setup-info">
+                                        <h4>Fedora KDE</h4>
+                                        <p>Main Distro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hobby-quote">
+                    <p>"I've always wanted to be a giant space crab." - Gabe Newell</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

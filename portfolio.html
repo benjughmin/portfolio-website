@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Benjamin Mallari</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
     <script>
         fetch('components/navbar.html')
             .then(response => response.text())
@@ -16,5 +17,39 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
+    
+    <main class="portfolio-container">
+        <div class="greeting-container">
+            <div class="portfolio-content">
+                <h1 class="page-title">PORTFOLIO</h1>
+                
+                <div class="construction-message">
+                    <div class="typing-text">
+                        <span id="typewriter-text">In construction...</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="sub-message">This section is currently being built. Check back soon for my latest projects!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Typewriter effect
+        const text = "In construction...";
+        const typewriterElement = document.getElementById('typewriter-text');
+        let index = 0;
+        
+        function typeWriter() {
+            if (index < text.length) {
+                typewriterElement.textContent = text.substring(0, index + 1);
+                index++;
+                setTimeout(typeWriter, 150);
+            }
+        }
+        
+        // Start typewriter effect after a short delay
+        setTimeout(typeWriter, 1000);
+    </script>
 </body>
 </html>

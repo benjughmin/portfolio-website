@@ -28,3 +28,33 @@
     background: #aa3124;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .navbar-placeholder {
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin: 5px;
+    height: auto;
+    min-height: 56px;
+  }
+
+  .navbar-placeholder a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-placeholder {
+    gap: 0.5rem;
+    padding: 0.4rem;
+    margin: 5px;
+  }
+
+  .navbar-placeholder a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
