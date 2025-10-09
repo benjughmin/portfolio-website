@@ -107,22 +107,8 @@ body {
 
 .skill-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.skill-card.high:hover {
-    border-color: #b8bb26;
-    box-shadow: 0 6px 20px rgba(184, 187, 38, 0.2);
-}
-
-.skill-card.medium:hover {
-    border-color: #fabd2f;
-    box-shadow: 0 6px 20px rgba(250, 189, 47, 0.2);
-}
-
-.skill-card.low:hover {
-    border-color: #fb4934;
     box-shadow: 0 6px 20px rgba(251, 73, 52, 0.2);
+    border-color: #fb4934;
 }
 
 .skill-icon {
@@ -140,44 +126,9 @@ body {
 .skill-card h3 {
     color: #ebdbb2;
     font-size: 1.2rem;
-    margin: 0 0 15px 0;
+    margin: 0;
     font-weight: bold;
 }
-
-.skill-bar {
-    background: #3c3836;
-    border-radius: 10px;
-    height: 8px;
-    margin: 10px 0;
-    overflow: hidden;
-    border: 1px solid #504945;
-}
-
-.skill-progress {
-    height: 100%;
-    border-radius: 10px;
-    transition: width 2s ease-in-out;
-    position: relative;
-}
-
-.skill-card.high .skill-progress {
-    background: linear-gradient(90deg, #b8bb26, #98bb26);
-}
-
-.skill-card.medium .skill-progress {
-    background: linear-gradient(90deg, #fabd2f, #d79921);
-}
-
-.skill-card.low .skill-progress {
-    background: linear-gradient(90deg, #fb4934, #cc241d);
-}
-
-.skill-progress[data-level="90"] { width: 90%; }
-.skill-progress[data-level="85"] { width: 85%; }
-.skill-progress[data-level="80"] { width: 80%; }
-.skill-progress[data-level="65"] { width: 65%; }
-.skill-progress[data-level="60"] { width: 60%; }
-.skill-progress[data-level="25"] { width: 25%; }
 
 .skills-note {
     text-align: center;
